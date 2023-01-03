@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "DriveShot",
+  "description": "Simple Extension to take screenshots and automatically save to google drive",
+  "version": "0.0.0.2",
+  "key": "put-your-key-here",
+  "offline_enabled": false,
+  "background": {
+    "service_worker": "worker.js"
+  },
+  "icons": {
+    "128": "data/icons/128x128.png",
+    "256": "data/icons/256x256.png"
+  },
+  "options_ui": {
+    "page": "data/options/index.html"
+  },
+  "action": {
+    "default_popup": "data/popup/index.html"
+  },
+  "commands": {
+    "_execute_action": {
+      "description": "Press the action button"
+    },
+    "captureArea": {
+      "description": "Capture area",
+      "suggested_key": "Alt+S"
+    }
+  },
+  "oauth2": {
+    "client_id": "put-your-google-client_id-here.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/drive.metadata.readonly",
+      "https://www.googleapis.com/auth/drive.file"
+    ]
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads",
+    "notifications",
+    "storage",
+    "clipboardWrite",
+    "identity"
+  ]
+}

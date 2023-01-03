@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Options Page - Simple Screenshot</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+
+  <body>
+    <div>
+      <p><strong>Drive Options</strong></p>
+      <label for="folderid">Folder ID to store screenshots</label>
+      <input type="text" id="folderid" name="folderid" />
+      <label for="driveid">Drive ID to store screenshots</label>
+      <input type="text" id="driveid" name="driveid" />
+    </div>
+    <div>
+      <p><strong>Full page capture options</strong></p>
+      <label for="delay">Delay in ms between each capture</label>
+      <input type="number" id="delay" name="delay" />
+      <label for="offset">Scroll offset</label>
+      <input type="number" id="offset" name="offset" />
+    </div>
+    <div>
+      <p><strong>Screenshot URL Options</strong></p>
+      <input type="radio" name="urlprefix" value="https://drive.google.com/uc?id=">Direct link to file type 1 (https://drive.google.com/uc?id=)<br>
+      <input type="radio" name="urlprefix" value="https://lh3.google.com/u/0/d/">Direct link to file type 2 (https://lh3.google.com/u/0/d/)<br>
+      <input type="radio" name="urlprefix" value="https://drive.google.com/file/d/">Link to Google Drive viewer<br>
+      <input type="radio" name="urlprefix" value="">Other: <input type="text" id="urlprefixOther" name="urlprefixOther" />
+    </div>
+    <p>
+      <label>
+        Add timestamps to filenames
+        <input type="checkbox" id="timestamp" />
+      </label>
+    </p>
+    <p>
+      <input type="button" value="Save Options" id="save" />
+      <input type="button" value="Reset Settings" id="reset" />
+      <span id="toast"></span>
+    </p>
+
+    <script src="index.js"></script>
+  </body>
+</html>
