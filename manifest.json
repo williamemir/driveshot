@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "DriveShot",
   "description": "Simple Extension to take screenshots and automatically save to google drive",
-  "version": "0.0.0.2",
+  "version": "0.0.0.3",
   "key": "put-your-key-here",
   "offline_enabled": false,
   "background": {
@@ -30,7 +30,6 @@
   "oauth2": {
     "client_id": "put-your-google-client_id-here.apps.googleusercontent.com",
     "scopes": [
-      "https://www.googleapis.com/auth/drive.metadata.readonly",
       "https://www.googleapis.com/auth/drive.file"
     ]
   },
